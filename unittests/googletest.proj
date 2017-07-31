@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="GoogleTest" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Import Project="$(MSBuildExtensionsPath)\MSBuildTeamCityTasks\MSBuild.TeamCity.Tasks.Targets"/>
+
+	<Target Name="GoogleTest">
+		<Delete Files="unittests.xml" />		
+		<Exec
+			Command="bin\win32-x86-debug\unittests.exe --gtest_output=xml:"
+			Timeout="60000"
+			IgnoreExitCode="true"
+		/>
+		<ImportGoogleTests
+			   TestResultsPath="$(MSBuildProjectDirectory)\unittests.xml"
+		/>		
+	</Target>
+</Project>

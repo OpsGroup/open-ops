@@ -1,0 +1,1 @@
+install(DIRECTORY ./ DESTINATION samples COMPONENT Samples PATTERN "CMakeLists.txt" EXCLUDE)

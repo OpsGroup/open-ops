@@ -1,0 +1,40 @@
+ops_filesin(INTERFACE "../../include/FrontTransforms/"
+	BaseOperator.h
+	CantoToReprise.h
+	ExpressionSimplifier.h
+	Resolver.h
+        C2RPass.h
+        ResolverPass.h
+  )
+
+ops_project(
+    FrontTransforms LIB
+  SOURCES
+    ${INTERFACE}
+    FrontTransformationsPlugin.h
+	FrontTransformationsPlugin.cpp
+	CantoToReprise/CantoToReprise.cpp
+	ExprOptimization/BasicTypesHelper.cpp
+	ExprOptimization/BinaryOperators.cpp
+	ExprOptimization/ExpressionSimplifier.cpp
+	ExprOptimization/UnaryOperators.cpp
+	ExprOptimization/Accessors.h
+	ExprOptimization/BasicTypesHelper.h
+	ExprOptimization/BinaryOperators.h
+	ExprOptimization/Exceptions.h
+	ExprOptimization/LiteralTypesLists.h
+	ExprOptimization/NullType.h
+	ExprOptimization/Operators.h
+	ExprOptimization/Typelist.h
+	ExprOptimization/TypelistMacros.h
+	ExprOptimization/TypeManip.h
+	ExprOptimization/UnaryOperations.h
+	ExprOptimization/UnaryOperators.h
+	Resolver.cpp
+        C2RPass.cpp
+        ResolverPass.cpp
+  LIBRARIES
+    OPS_Core
+    Reprise
+  PUBLIC
+  )

@@ -1,0 +1,11 @@
+CMakeLists.txt.user*
+*~
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+docs/Reprise/Reprise.chw
+deps/include/antlr-3.2
+deps/include/expat
+deps/include/gtest
+deps/win32
