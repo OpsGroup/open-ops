@@ -26,8 +26,11 @@ How to build OpenOPS for Linux
 This steps will be necessary before the beginning of building (there are in brackets are names of packets for Ubuntu/Debian):
 
 1.Install standard programs for building apps: g ++, make etc. If you work in Ubuntu/Debian there is enough to set build-essential.
+
 2.Install 7z archiver (packets for Ubuntu/Debian: p7zip-full).
+
 3.Install Qt library not less than 5.0.0. version. For Ubuntu>= 13.04 packets qt5-default, libqt5svg5-dev are enough. For other systems Qt may be used official installer: http://qt-project.org/downloads
+
 4.Install wget utility. 
 
 
