@@ -1,7 +1,10 @@
+add_subdirectory(Analysis)
+add_subdirectory(Backends)
 add_subdirectory(ClangParser)
 add_subdirectory(FrontTransforms)
 add_subdirectory(Frontend)
 add_subdirectory(OPS_Core)
 add_subdirectory(OPS_Stage)
 add_subdirectory(Reprise)
-
+add_subdirectory(Shared)
+add_subdirectory(Transforms)

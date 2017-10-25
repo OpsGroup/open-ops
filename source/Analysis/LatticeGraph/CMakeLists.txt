@@ -1,0 +1,3 @@
+add_subdirectory(CountIntPoints/testmodCountIntPoints)
+add_subdirectory(testmod3)
+add_subdirectory(testmod4)

@@ -1,0 +1,1 @@
+cl test\test1_fprintf.c /Fotest\test1_fprintf.obj /Fetest\test1_fprintf.exe

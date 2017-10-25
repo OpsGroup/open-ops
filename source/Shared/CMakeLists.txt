@@ -1,0 +1,72 @@
+project(Shared)
+
+ops_filesin(INTERFACE "../../include/Shared/"
+	Checks.h
+	DataShared.h
+	ExpressionHelpers.h
+	ExpressionPolynomial.h
+        ExpressionOperators.h
+	LabelsShared.h
+	LinearExpressions.h
+	LinearExpressionsUtils.h
+	LoopShared.h
+	NodesCollector.h
+	Nullable.h
+	ParametricLinearExpressions.h
+	PlatformSettings.h
+	ProgramContext.h
+	ProgramTextBuilder.h
+	ReferenceMapper.h
+	RepriseClone.h
+	ReprisePath.h
+	StatementsShared.h
+	SubroutinesShared.h
+	Checks/CompositionCheck/CompositionCheckObjects.h
+	Checks/CompositionCheck/CompositionCheckWalker.h
+	ContextNotifier/ContextNotifier.h
+	ContextNotifier/ContextObserverBase.h
+	ContextNotifier/ContextObserverState.h
+	ContextNotifier/ContextObserverStateManager.h
+	ContextNotifier/IContextObserver.h
+)
+
+ops_project(
+    Shared LIB
+  SOURCES
+    ${INTERFACE}
+	DataShared/DataSharedDeepWalkers.h
+	LoopShared/LoopSharedDeepWalkers.h
+	StatementsShared/StatementsSharedDeepWalkers.h
+	SubroutinesShared/SubroutinesSharedDeepWalkers.h
+	LinearExpressions/ParametricLinearExpressions.cpp
+	LinearExpressions/LinearExpressions.cpp
+	LinearExpressions/LinearExpressionsUtils.cpp
+	ExpressionsReduction/ExpressionPolynomial.cpp
+	ProgramContext.cpp
+	ProgramTextBuilder.cpp
+	ReferenceMapper.cpp
+	RepriseClone.cpp
+	ReprisePath.cpp
+	Checks/CompositionCheck/CompositionCheckObjects.cpp
+	Checks/CompositionCheck/CompositionCheckWalker.cpp
+	DataShared/DataShared.cpp
+	ExpressionHelpers/ExpressionHelpers.cpp
+	LabelsShared/LabelsShared.cpp
+	LoopShared/LoopShared.cpp
+	PlatformSettings/PlatformSettings.cpp 
+	StatementsShared/StatementsShared.cpp
+	SubroutinesShared/SubroutinesShared.cpp
+	
+	ContextNotifier/ContextNotifier.cpp
+	ContextNotifier/ContextObserverBase.cpp
+	ContextNotifier/ContextObserverState.cpp
+	ContextNotifier/ContextObserverStateManager.cpp
+  LIBRARIES
+    OPS_Core
+    Reprise
+  PUBLIC
+)
+
+add_subdirectory(testmod)
+add_subdirectory(ExpressionHelpers/testmod)
+add_subdirectory(LabelsShared/testmod)

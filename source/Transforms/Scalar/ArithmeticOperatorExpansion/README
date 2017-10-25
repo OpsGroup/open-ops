@@ -1,0 +1,18 @@
+Tranformation:		ArithmeticOperatorExpansion
+Author:				Anton Khayrudinov
+EMail:				a.khayrudinov@gmail.com
+
+In order to use this transformation for a C program, "aoe-sr.h" header
+must be included:
+
+	#include "aoe-sr.h"
+	#include "somefile.h"
+	
+	int FuncYouWantToTransform(int a, char b)
+	{
+		return a * (b << 4) + b * 8;
+	}
+	
+The transformation finds all operators and, if possible, replaces them with
+calls to subroutines that require access to functions declared in "aoe-sr.h".
+If this header is not included beforehand, the transformation won't do anything.
