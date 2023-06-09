@@ -88,6 +88,8 @@ ops_project(
   CalculationGraph/CalculationGraph.cpp
   CalculationGraph/CalculationGraphBase.cpp
   CalculationGraph/CalculationGraphBuilder.cpp
+  Clones/HashDeepWalker.cpp
+  Clones/CloneFinder.cpp
   CallGraph/CallGraph.cpp
   ComplexOccurrenceAnalysis/GrouppedOccurrences.cpp
   ConsistCheck/Conditions.cpp
