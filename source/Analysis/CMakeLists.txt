@@ -4,6 +4,8 @@ ops_filesin(INTERFACE "../../include/Analysis/"
   CalculationGraph/CalculationGraphBase.h
   CalculationGraph/CalculationGraphBuilder.h
   CalculationGraph/ExpressionGraph.h
+  Clones/HashDeepWalker.h
+  Clones/CloneFinder.h
   CallGraph.h
   ComplexOccurrenceAnalysis/GrouppedOccurrences.h
   ConsistCheck/Conditions.h
