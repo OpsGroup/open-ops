@@ -4,6 +4,8 @@ ops_filesin(INTERFACE "../../include/Analysis/"
   CalculationGraph/CalculationGraphBase.h
   CalculationGraph/CalculationGraphBuilder.h
   CalculationGraph/ExpressionGraph.h
+  Clones/HashDeepWalker.h
+  Clones/CloneFinder.h
   CallGraph.h
   ComplexOccurrenceAnalysis/GrouppedOccurrences.h
   ConsistCheck/Conditions.h
@@ -86,6 +88,8 @@ ops_project(
   CalculationGraph/CalculationGraph.cpp
   CalculationGraph/CalculationGraphBase.cpp
   CalculationGraph/CalculationGraphBuilder.cpp
+  Clones/HashDeepWalker.cpp
+  Clones/CloneFinder.cpp
   CallGraph/CallGraph.cpp
   ComplexOccurrenceAnalysis/GrouppedOccurrences.cpp
   ConsistCheck/Conditions.cpp
